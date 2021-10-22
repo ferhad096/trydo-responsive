@@ -6,6 +6,7 @@
 }
 
 #nav{
+    display: none;
     padding: 4rem 0;
     z-index: 99999;
     position: absolute;
@@ -98,7 +99,6 @@
     }
 }
 #nav-mobile{
-    display: none;
     padding: 2rem 1rem;
     img{
         width: 60%;
@@ -714,17 +714,18 @@
 }
 
 
-
+@media(min-width: 992px){
+    #nav{
+        display: block;
+    }
+    #nav-mobile{
+        display: none;
+    }
+}
 
 
 
 @media(max-width:768px){
-    #nav{
-        display: none;
-    }
-    #nav-mobile{
-        display: block;
-    }
     #header{
         h1{
             font-size: 45px;

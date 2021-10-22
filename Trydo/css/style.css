@@ -7,6 +7,7 @@
 }
 
 #nav {
+  display: none;
   padding: 4rem 0;
   z-index: 99999;
   position: absolute;
@@ -113,7 +114,6 @@
 }
 
 #nav-mobile {
-  display: none;
   padding: 2rem 1rem;
   z-index: 8888;
   width: 100%;
@@ -847,13 +847,16 @@
   color: #c6c9d8;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 992px) {
   #nav {
-    display: none;
-  }
-  #nav-mobile {
     display: block;
   }
+  #nav-mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
   #header h1 {
     font-size: 45px;
     padding-top: 5rem;
